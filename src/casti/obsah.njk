@@ -1,0 +1,10 @@
+<h2>Obsah</h2>
+<article>
+{{ film.obsah.text }} 
+{% if film.obsah.autor.odkaz %} 
+ <span class="film--autor"> <em><a href="{{ film.obsah.autor.odkaz }}" class="film--autor--odkaz"> ({{ film.obsah.autor.jmeno}})<a></em>
+</span>
+{% else %}
+  <span class="film--autor"><em> ({{ film.obsah.autor.jmeno}})</em></span>
+{% endif %}
+</article>

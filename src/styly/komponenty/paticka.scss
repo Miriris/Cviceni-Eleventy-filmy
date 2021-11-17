@@ -1,0 +1,72 @@
+.paticka {
+  background-color: rgb(252, 249, 249);
+  color:rgb(51, 46, 46);
+  margin: 0;
+
+  &__obsah {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
+
+.obecne {
+  margin-left: 0;
+  
+  &__seznam {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__polozka {
+    text-decoration: none;
+    margin: 0;
+    color:rgb(51, 46, 46);
+    }
+
+  &__polozka:hover {
+    text-decoration: underline;
+    color:rgb(51, 46, 46);
+    }
+  }
+
+.podobne-weby {
+  color:rgb(51, 46, 46);
+
+  &__seznam {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__polozky {
+    margin: 0;
+    list-style-type: none;
+    color:rgb(51, 46, 46);
+
+    &--odkaz {
+      text-decoration: none;
+      margin: 0;
+      color:rgb(51, 46, 46);
+    }
+
+    &--odkaz:hover {
+      text-decoration: underline;
+      color:rgb(51, 46, 46);
+      }
+  }
+}
+
+@media screen and (min-width: 350px) {
+
+  .paticka__obsah {
+    display: flex;
+    max-width: 50rem;
+  }
+
+  .obecne {
+    margin-left: 5rem;
+  }
+}
+
+

@@ -1,0 +1,60 @@
+<article>
+  <div class="plakat" >
+    <img src="{{ film.plakat.url }}" width="200px" height="300px" class="plakat--odkaz"/>
+  </div>
+
+  <h2>Hodnocení</h2>
+  {% if film.hodnoceni > 4 %} 
+    <div class="film__hodnoceni"> 
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+    </div>
+  {% elif film.hodnoceni > 3 %}
+    <div class="film__hodnoceni"> 
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+    </div>
+  {% elif film.hodnoceni > 2 %}
+    <div class="film__hodnoceni"> 
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+    </div>
+  {% elif film.hodnoceni > 1 %}
+    <div class="film__hodnoceni"> 
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+    </div>
+  {% elif film.hodnoceni > 0 %}
+    <div class="film__hodnoceni"> 
+      <img src="/obrazky/hvezda-vyplnena.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+    </div>
+  {% else %}
+    <div class="film__hodnoceni"> 
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+      <img src="/obrazky/hvezda-prazdna.svg" width="25px" height="25px">
+    </div>
+  {% endif %}
+
+  <h2>Související filmy</h2>
+
+
+</article>

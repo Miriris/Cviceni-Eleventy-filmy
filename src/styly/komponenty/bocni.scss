@@ -1,0 +1,32 @@
+.film__hodnoceni {
+  display: flex;
+}
+
+.plakat {
+  width: 100%;
+  height: auto;
+
+  &--odkaz {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .detail-bocni {
+    width: 15rem;
+    max-width: 50rem;
+    padding: 1rem;
+  }
+
+  .plakat {
+    width: 15rem;
+
+    &--odkaz {
+      max-width: 100%;
+      width:100%;
+      height: auto;
+    }
+  }
+} 

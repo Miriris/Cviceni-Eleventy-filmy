@@ -1,0 +1,31 @@
+.seznam {
+  max-width: 50rem;
+  margin: 0 auto;
+  width: 100%;
+  }
+
+.nadpis {
+  margin: 1rem;
+}
+
+.seznam-filmu {
+  color: #3d5afe;
+
+  &__polozka {
+    list-style-type: square;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    margin: 0;
+
+    &--odkaz {
+      color: #3d5afe;
+      text-decoration: none;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    &--odkaz:hover {
+      text-decoration: underline;
+    }
+  }
+}

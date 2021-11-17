@@ -1,0 +1,32 @@
+---
+layout: zakladni
+pagination:
+  data: filmy
+  size: 1
+  alias: film
+permalink: "/film/{{ film.nazev | slug }}/"
+---
+<div class="detail">
+  <div class="detail-telo">
+  
+    <h1>{{ film.nazev }}</h1>
+    <table>
+      <tr>
+        <td class="detail--vznik">Rok:</td><td>{{ film.rok}}</td>
+      </tr>
+      <tr>
+        <td class="detail--vznik">Země:</td><td>{{ film.zeme | join(' / ') }}</td>
+      </tr>
+      <tr>
+        <td class="detail--vznik">Žánr:</td><td>{{ film.zanr | join(' / ') }}</td>
+      </tr>
+      <tr>
+        <td class="detail--vznik">Délka:</td><td>{{ film.delka }} minut</td>
+      </tr>
+    </table>
+    {% include "obsah.njk" %}
+  </div>
+  <div class="detail-bocni">
+    {% include "bocni.njk" %}
+  </div>
+</div>
